@@ -61,18 +61,18 @@ body {
     right: 10px;
 }
 
-.main-side2 {
+.header-content {
     display: flex;
     justify-content: space-between;
 }
 
-.company_name2 {
+.header-title {
     display: flex;
     justify-content: left;
     width: 20%;
 }
 
-.name {
+.title {
     font-family: "Edwardian Script ITC", sans-serif;
     font-size: 72px;
     font-weight: 400;
@@ -80,20 +80,14 @@ body {
     text-decoration: none;
 }
 
-.top-menu {
+.menu {
     display: flex;
     justify-content: space-around;
     width: 20%;
     margin-top: 40px;
 }
 
-.nav {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.nav-item {
+.menu-item {
     font-size: 20px;
     line-height: 1.2;
     font-weight: 400;
@@ -103,20 +97,24 @@ body {
     margin-right: 15px;
 }
 
-.nav-item:hover {
+.menu-item:hover {
     color: #6c8a40;
 }
 
-.search-form2 {
-    display: flex;
-    justify-content: right;
-    margin-top: 35px;
+.searching {
+    padding-top: 35px;
 }
 
-.search1 {
+.searching form {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+.search-form {
     border: 1px solid #aba6bb;
     display: inline-flex;
-    padding: 0 20px;
+    /*padding: 0 20px;*/
     justify-content: space-between;
     align-items: center;
     height: 28px;
@@ -214,14 +212,13 @@ body {
     color: rgb(120, 120, 153);
 }
 
-
 .content {
     display: flex;
     justify-content: space-evenly;
 }
 
 .content-main {
-    margin-top: 100px;
+    margin-top: 120px;
 }
 
 .content-title {
@@ -418,7 +415,7 @@ body {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     /*grid-gap: 1em;*/
-    grid-auto-rows: minmax(100px, auto);
+    /*grid-auto-rows: minmax(100px, auto);*/
     justify-items: stretch;
     align-items: stretch;
 }
@@ -458,4 +455,59 @@ body {
 
 .box6 {
     grid-column: 1/5;
+}
+
+/*media*/
+@media screen and (max-width: 769px) {
+    .side1 {
+        justify-content: space-between;
+    }
+
+    .searching form {
+        /*position: absolute;
+        display: flex;
+        justify-content: end;*/
+        width: 30px;
+    }
+
+    .menu {
+        display: flex;
+        justify-content: center;
+    }
+
+    .header-title {
+        padding-right: 200px;
+    }
+
+    .content {
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .content-main {
+        margin-top: 10px;
+        height: auto;
+    }
+
+    .button {
+        padding-top: 30px;
+        padding-left: 0;
+    }
+
+    .main-image {
+        display: block;
+        padding: 0;
+        height: auto;
+        padding-top: 30px;
+    }
+
+    .cards {
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .cards-holder {
+        margin-left: 200px;
+    }
+
 }
