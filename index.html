@@ -25,6 +25,9 @@
                     <div class="divider"></div>
                     <div class="reg-link"><a class="top-item" href="#"> регистрация</a></div>
                 </div>
+                <div class="auth-mob">
+                    <div class="log-link"><img src="img/log.png" alt="" class="ikon-log"></div>
+                </div>
 
                 <div class="shop">
                     <div class="basket2"><a class="top-item" href="#"><img src="img/basket.png" alt=""
@@ -32,26 +35,54 @@
                     <div class="divider"></div>
                     <div class="basket-link"><a class="top-item" href="#">корзина</a></div>
                 </div>
+                <div class="shop-mob">
+                    <div class="basket2"><a class="top-item" href="#"><img src="img/basket.png" alt=""
+                                class="img-basket2"></a></div>
+                </div>
             </div>
         </div>
         <div class="box box2">
-            <div class="left-menu">
-                <ul>
-                    <li><a class="left-item" href="#">Вопрос-ответ</a></li>
-                    <li><a class="left-item" href="#">Вакансии</a></li>
-                    <li><a class="left-item" href="#">Видео</a></li>
-                    <li><a class="left-item" href="#">О компании</a></li>
-                    <li><a class="left-item" href="#">Новости</a></li>
-                    <li><a class="left-item" href="#">Магазины</a></li>
+            <nav class="left-menu">
+                <ul class="menu1">
+                    <li class="left-item"><a href="#">Вопрос-ответ</a></li>
+                    <li class="left-item"><a href="#">Вакансии</a></li>
+                    <li class="left-item"><a href="#">Видео</a></li>
+                    <li class="left-item"><a href="#">О компании</a></li>
+                    <li class="left-item"><a href="#">Новости</a></li>
+                    <li class="left-item"><a href="#">Магазины</a></li>
                 </ul>
-            </div>
-            <div class="button">
+                <div class="button">
+                    <p class="phone-number">
+                        +7(383) 363 05-05;
+                    </p>
+                    <a href="#" class="btn">СВЯЗАТЬСЯ</a>
+                </div>
+            </nav>
+
+            <!--burger-->
+            <nav class="mobile-menu">
+                <div class="menu_inner">
+                    <div class="menu-burger"><span>burger menu</span></div>
+                </div>
+                <ul class="menu1">
+                    <li class="left-item"><a href="#">Вопрос-ответ</a></li>
+                    <li class="left-item"><a href="#">Вакансии</a></li>
+                    <li class="left-item"><a href="#">Видео</a></li>
+                    <li class="left-item"><a href="#">О компании</a></li>
+                    <li class="left-item"><a href="#">Новости</a></li>
+                    <li class="left-item"><a href="#">Магазины</a></li>
+                </ul>
+            </nav>
+            <!--<div class="button">
                 <p class="phone-number">
                     +7(383) 363 05-05;
                 </p>
                 <a href="#" class="btn">СВЯЗАТЬСЯ</a>
-            </div>
+            </div>-->
+
+
         </div>
+        <!--end burger-->
         <div class="box box3">
             <div class="header-content">
                 <div class="header-title">
@@ -69,6 +100,19 @@
                         </button>
                         <input class="search-input" type="search" name="search" value="" placeholder="Поиск">
                     </form>
+                </div>
+            </div>
+            <div class="header-content-mob">
+                <div class="header-title">
+                    <a class="title" href="/">Flowers</a>
+                </div>
+                <div class="menu">
+                    <a class="menu-item" href="#">Каталог</a>
+                    <a class="menu-item" href="#">Акции</a>
+                    <a class="menu-item" href="#">Услуги</a>
+                    <button class="search-button" type="submit">
+                        <img class="search-img" src="img/search.png" alt="">
+                    </button>
                 </div>
             </div>
         </div>
@@ -199,9 +243,8 @@
                 </div>
             </div>
         </div>
-        <footer>
-
-        </footer>
+        <script src="js/jquery-3.5.1.min.js"></script>
+        <script src="js/main.js"></script>
 
 </body>
 

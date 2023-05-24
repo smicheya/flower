@@ -3,7 +3,6 @@
 }
 
 body {
-    /*height: 100%;*/
     padding: 0;
     margin: 0;
     font-family: 'Roboto', sans-serif;
@@ -11,16 +10,6 @@ body {
 
 
 }
-
-.header {
-    /*min-height: 100%;*/
-    /*display: flex;
-    flex-direction: column;*/
-    /*height: 100vh;*/
-    /*height: 100vh;
-    background-size: contain;*/
-}
-
 
 .top-item {
     text-decoration: none;
@@ -43,6 +32,10 @@ body {
     width: 30%;
 }
 
+.auth-mob {
+    display: none;
+}
+
 .divider {
     background-color: #000;
     width: 1px;
@@ -54,6 +47,10 @@ body {
     display: flex;
     justify-content: end;
     width: 30%;
+}
+
+.shop-mob {
+    display: none;
 }
 
 .img-basket {
@@ -105,6 +102,10 @@ body {
     padding-top: 35px;
 }
 
+.searching-mob {
+    display: none;
+}
+
 .searching form {
     position: relative;
     display: flex;
@@ -147,26 +148,26 @@ body {
     background-color: transparent;
 }
 
-.left-menu {
-    height: auto;
-    margin-top: 80px;
+.header-content-mob {
+    display: none;
 }
 
-.left-menu ul {
-    display: block;
+.menu1 {
     height: auto;
+    margin-top: 80px;
     margin: 0;
     padding: 0;
     list-style: none;
-    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.left-menu li {
-    display: block;
-    position: relative;
+.mobile-menu {
+    display: none;
 }
 
-.left-item {
+.left-item a {
     position: relative;
     display: block;
     height: auto;
@@ -180,7 +181,7 @@ body {
     padding: 10px 15px;
 }
 
-.left-menu a:hover {
+.menu1 a:hover {
     color: #6c8a40;
 }
 
@@ -206,6 +207,9 @@ body {
     letter-spacing: 0.15em;
     color: #dad9e7;
     text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .btn:hover {
@@ -464,9 +468,6 @@ body {
     }
 
     .searching form {
-        /*position: absolute;
-        display: flex;
-        justify-content: end;*/
         width: 30px;
     }
 
@@ -477,6 +478,10 @@ body {
 
     .header-title {
         padding-right: 200px;
+    }
+
+    .left-menu {
+        height: 70%;
     }
 
     .content {
@@ -509,5 +514,208 @@ body {
     .cards-holder {
         margin-left: 200px;
     }
+
+    .card-image {
+        padding-top: 20px;
+    }
+
+    .card-desk {
+        text-align: -webkit-center;
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 376px) {
+    .left-menu {
+        display: none;
+    }
+
+    .mobile-menu {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .menu_inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .menu1 {
+        display: none;
+        text-align: left;
+        padding-top: 10px;
+    }
+
+    .menu1 li {
+        padding: 5px 0;
+    }
+
+    .menu1 a {
+        margin: 0;
+        width: 200px;
+    }
+
+    .menu-burger {
+        display: block;
+        overflow: hidden;
+        cursor: pointer;
+        position: relative;
+        width: 40px;
+        height: 40px;
+        font-size: 0;
+        background-color: #515055;
+        margin-top: 25px;
+        padding: 0;
+        border-radius: 5px;
+
+    }
+
+    .menu-burger span {
+        display: block;
+        position: absolute;
+        background-color: #fff;
+        height: 3px;
+        width: 30px;
+        top: 18px;
+        left: 5px;
+        right: 5px;
+        transition: background 0s 0.3s;
+    }
+
+    .menu-burger span::before,
+    .menu-burger span::after {
+        position: absolute;
+        display: block;
+        content: '';
+        width: 100%;
+        height: 3px;
+        background-color: #fff;
+        transition-duration: 0.3s, 0.3s;
+        transition-delay: 0.3s, 0s;
+    }
+
+    .menu-burger span::before {
+        top: -10px;
+    }
+
+    .menu-burger span::after {
+        bottom: -10px;
+    }
+
+    .menu-burger.close span::before {
+        top: 0px;
+        transform: rotate(45deg);
+    }
+
+    .menu-burger.close span::after {
+        bottom: 0px;
+        transform: rotate(-45deg);
+    }
+
+    .menu-burger.close span {
+        background: none;
+    }
+
+    .auth {
+        display: none;
+    }
+
+    .auth-mob {
+        display: flex;
+        justify-content: start;
+        width: 30%;
+    }
+
+    .shop {
+        display: none;
+    }
+
+    .shop-mob {
+        display: flex;
+        justify-content: end;
+        width: 30%;
+    }
+
+    .box2 {
+        grid-column: 2/1;
+        grid-row: 2/2;
+        border-right: 0;
+    }
+
+    .box3 {
+        grid-column: 1/5;
+    }
+
+    .box4 {
+        grid-column: 1/5;
+    }
+
+
+    .header-content-mob {
+        display: block;
+    }
+
+    .header-content {
+        display: none;
+    }
+
+    .menu {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    .header-title {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        padding: 0;
+    }
+
+    .content {
+        display: flex;
+        text-align: center;
+        text-align-last: center;
+        justify-content: space-evenly;
+    }
+
+    .cards-holder {
+        display: block;
+        margin: 0;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .main-image {
+        position: relative;
+        max-width: 520px;
+        max-height: 500px;
+    }
+
+    .slider {
+        position: relative;
+        max-width: 520px;
+        max-height: 500px;
+        height: auto;
+    }
+
+    .slide img {
+        max-width: 520px;
+        max-height: 500px;
+    }
+
+    .navigation-auto {
+        max-width: 520px;
+    }
+
+    .navigation-manual {
+        max-width: 520px;
+    }
+
 
 }
