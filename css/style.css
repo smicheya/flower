@@ -152,6 +152,25 @@ body {
     display: none;
 }
 
+.left-menu {
+    display: block;
+    position: relative;
+    height: 600px;
+
+}
+
+.left-menu ul {
+    display: block;
+    padding-top: 80px;
+}
+
+/*
+.menu_inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+*/
 .menu1 {
     height: auto;
     margin-top: 80px;
@@ -161,6 +180,16 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.menu-item {
+    font-size: 20px;
+    line-height: 1.2;
+    font-weight: 400;
+    letter-spacing: 0.075em;
+    color: #454449;
+    text-decoration: none;
+    margin-right: 15px;
 }
 
 .mobile-menu {
